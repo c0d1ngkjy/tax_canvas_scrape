@@ -1,0 +1,12 @@
+#dependencies
+node_modules
+
+#proxies
+f_prox.txt
+fetchProxies.js
+
+#memo
+memo.txt
+
+#scraped_data
+scrapedDocIds.json

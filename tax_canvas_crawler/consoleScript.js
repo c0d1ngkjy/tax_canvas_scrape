@@ -33,7 +33,8 @@ import ProgressBar from 'progress';
             await new Promise((resolve, reject) => {
                 Req.doAction("ASIPDI002PR01", Biz.tmp).done(data => {
                     const resultList = data.ASIPDI002PR01.body;
-                    resultList.forEach(i => partialDocIdList.push(i.dcm));
+                    resultList.forEach(i => partialDocIdList.push(i.dcm)); 
+                    //change to i.dcm.DOC_ID to only fetch ids
                     resolve();
                 }).fail(reject);
             });
